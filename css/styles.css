@@ -1,3 +1,61 @@
+@import '/css/buttons.css';
+.player{
+    margin-block-start: 100px;
+    position: relative;
+}
+
+.player video{
+inline-size: 100%;
+vertical-align: middle;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.wrapper{
+    max-inline-size: 80%;
+    margin: auto;
+    margin-top: 400px;
+    margin-bottom: 400px;
+    border-radius: 40px;
+}
+
+.player-actions{
+    position: absolute;
+    inset:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    
+}
+
+.player-progress{
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0;
+    display: flex;
+    padding: 10px;
+}
+.player-progress input{
+    flex: 1;
+    
+}
+
+.player-overlay{
+    position: absolute;
+    inset:0;
+    opacity: 0;
+    transition: .3s opacity;
+}
+.player:hover .player-overlay{
+    opacity: 1;
+}
+
+
+
+
+
+
 .navbar button.a{
     border: 1px solid #18A0FB;
 	border-radius: 4px;
@@ -29,53 +87,8 @@
 
 
 
-/* ------------------------- */
-/* POPUP */
-/* ------------------------- */
 
-/*
-section .popup-outer{   
-    width: 60%;
-    background: rgba(0, 0, 0, 0);
-    position: absolute;
-	top: 15%;
-	left:20%;
-	opacity: 0;
-	border-radius: 12px;
-	border: 2px solid black;
-    pointer-events: none;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: opacity 0.2s 0s ease-in-out,  
-                transform 0.2s 0s ease-in-out;
-}
 
-section.active .popup-outer{
-    opacity: 1;
-    pointer-events: auto;
-    
-}
-section .popup-box{
-    position: relative;
-    background: rgb(255, 255, 255);
-    border-radius: 12px;
-    padding: 30px;
-	height: 700px;
-    width: 100%;
-	
-}
-.popup-box .close{
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    font-size: 24px;
-    color: #000000;
-    transition: all 0.2s ease;
-    cursor: pointer;
-}
-.popup-box .close:hover{
-    color: #333;
-}*/
 
 
 
