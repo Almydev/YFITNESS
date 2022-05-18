@@ -15,7 +15,11 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="/js/script.js"></script>
+
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<script src="js/bootstrap-datetimepicker.min.js"></script>
     
     
 </head>
@@ -23,8 +27,8 @@
     <header>
         <nav class="navbar bg-white">
             <form class="container-fluid justify-content-end">
-                <button class="popup btn btn-outline-success me-2 a" type="button">Login</button>
-                <button class="btn btn-outline-success me-2 b" type="button">Register</button>
+                <a class="btn btn-light m-1" data-bs-toggle="modal" href="#exampleModalToggle" role="button" style="border: 1px solid #18A0FB; color: #18A0FB;">Login</a>
+                <a class="btn btn-primary m-1" data-bs-toggle="modal" href="#exampleModalToggle2" role="button" style="background-color:#18A0FB ;">Registrar</a>
             </form>
         </nav>
         
@@ -39,23 +43,116 @@
     </div>
 
 
-    <section>
-        <div class="popup-outer">
-            <div class="popup-box">
-              <i id="close" class='bx bx-x close'></i>
-              <div id="fotoLogin"><img src="/Design/Login/logoLogin.png" alt=""></div>
-              <div id="form">
-                <form action="">
-                    
-                </form>
-              </div>
-              
+    <!--MODAL LOGIN-->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body d-flex align-items-center justify-content-around">
+                <picture>
+                    
+                    <img src="Design/Login/logoLogin.png" class="img-fluid" style="border-radius: 12px;">
+                  </picture>
+                <div id="form" class="flex-grow-2 ms-3">
+                    <form>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-white" id="basic-addon1"> <img src="/Design/Login/user.png" alt="" style="width: 20px;"> </span>
+                            <input type="text" class="form-control" id="txtUsername" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-white" id="basic-addon1"> <img src="/Design/Login/padlock.png" alt="" style="width: 20px;"> </span>
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                        
+                        <div class="form-group row">
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn btn-light">Cancelar</button>
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+          </div>
         </div>
-    </section>
-    
+    </div>
+
+    <!--MODAL REGISTRO-->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body d-flex justify-content-around align-items-center" style="margin:40px; padding: 10px;">
+                    <div id="form" class="" style="width: 50%; padding: 5%;">
+                        <form>
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                </div> 
+                            </div>
+                            
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Primer Apellido">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Segundo Apellido">
+                                </div>
+                            </div> 
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div> 
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <input type="number" class="form-control" placeholder="Teléfono">
+                                </div>
+                                <div class="col">
+                                    <input type="datetime-local" class="form-control" placeholder="Fecha de Nacimiento" >
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </div> 
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <input type="password" class="form-control" placeholder="Repeat" >
+                                </div>
+                            </div>
+                            
+
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-light">Cancelar</button>
+                                    <button type="submit" class="btn btn-primary">Registrar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <picture style="width: 50%;">
+                        <img src="Design/Registro/mancuernas.jpg" class="img-fluid" style="border-radius: 12px; padding:auto;">
+                    </picture> 
+                </div>
+                        
+            </div>
+                    
+        </div>
+            
+    </div>
+       
    
 
-    
 </body>
 </html>
