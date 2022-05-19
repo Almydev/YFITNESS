@@ -11,14 +11,14 @@
 }
 
 #pause{
-    background-image: url('../images/pause.svg');
+    background-image: url('/images/videoPlayer/pause.svg');
 }
 #play{
-    background-image: url('../images/play.svg');
+    background-image: url('/images/videoPlayer/play.svg');
 }
 #forward{
-    background-image: url('../images/+10.svg');
+    background-image: url('/images/videoPlayer/+10.svg');
 }
 #backward{
-    background-image: url('../images/-10.svg');
+    background-image: url('/images/videoPlayer/-10.svg');
 }
