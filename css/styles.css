@@ -87,6 +87,18 @@ border-radius: 10px;
 
 
 
+/*ESTILOS NAVBAR*/
+#container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menuFlotante{
+    display: flex;
+    border: 1.02222px solid rgba(9, 36, 75, 0.2);
+    filter: drop-shadow(0px 0px 30.6667px rgba(0, 0, 0, 0.1));
+    border-radius: 8.17778px;
+}
 
 
 
