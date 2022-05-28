@@ -1,3 +1,6 @@
+
+// ********** Script para el reproductor del video **********
+
 const $video = document.querySelector('#video')
 const $play = document.querySelector('#play')
 const $pause = document.querySelector('#pause')
@@ -23,37 +26,35 @@ function handlePlay(){
     document.getElementById("play").hidden = true
     document.getElementById("pause").hidden = false
 }
+
 function handlePause(){
     document.querySelector('#video').pause()
     document.getElementById("play").hidden = false
     document.getElementById("pause").hidden = true
 }
 
-
-
-
 function handleBackward(){
     document.querySelector('#video').currentTime -= 10
 }
+
 function handleForward(){
     document.querySelector('#video').currentTime += 10
 }
 
-
-
 function handleLoaded(){
     document.querySelector('#progress').max = document.querySelector('#video').duration
 }
+
 function handleTimeUpdate(){
     document.querySelector('#progress').value=document.querySelector('#video').currentTime
 }
-
-
 
 function handleInput(){
     document.querySelector('#video').currentTime = document.querySelector('#progress').value
 }
 
+
+// ********** Script para el reproductor del video **********
 
 
 
