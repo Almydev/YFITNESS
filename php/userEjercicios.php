@@ -15,7 +15,7 @@
                 <img src="/images/logoYfitness/logoYF.png" alt="YFINTESS s.l.">
             </div>
             <div id="cuerpoMenu">
-
+                
             </div>
             <div id="pieMenu">
 
@@ -31,3 +31,8 @@
     
 </body>
 </html>
+
+
+<?php
+
+?>
