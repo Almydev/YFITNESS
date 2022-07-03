@@ -1,4 +1,5 @@
 <?php
+echo("hola");
 
     if(isset($_POST['btnRegistrar'])){
         $nombre = $_POST['nombre'];
@@ -8,6 +9,5 @@
         $telefono = $_POST['telefono'];
         
     }
-
-
+    
 ?>

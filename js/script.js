@@ -7,9 +7,9 @@ const $pause = document.querySelector('#pause')
 const $backward = document.querySelector('#backward')
 const $forward = document.querySelector('#forward')
 
-window.addEventListener("load", inicio);
+window.addEventListener("load", inicioo);
 
-function inicio() {
+function inicioo() {
     document.getElementById("play").addEventListener('click',handlePlay);
     document.getElementById("pause").addEventListener('click',handlePause);
     document.querySelector('#backward').addEventListener('click',handleBackward)
@@ -62,7 +62,6 @@ function handleInput(){
 
 document.addEventListener("DOMContentLoaded",inicio);
 
-
 function inicio(){
     
     document.getElementById("btnRegistrar").addEventListener("click",validarRegistro)
@@ -71,10 +70,6 @@ function inicio(){
 
 function validarRegistro (e){
     
-        
-        e.preventDefault();
-    
-
         //Recojo en variables los datos introducidos por el usuario para poder registrar el coche
         let nombre = document.getElementById("txtNombre").value;
         let primerApellido = document.getElementById("txtPrimerApellido").value;
@@ -125,8 +120,32 @@ function validarRegistro (e){
         }else{
             texto = texto + "- El año no puede coindidir con los 3 ultimos y es obligatorio \n";
         }
+
+        if(validarUsername(username)){
+            contadorValidacion++;
+        }else{
+            texto = texto + "- El nombre de usuario no es correcto \n";
+        }
+
+        if(validarContrasenha(contraUno)){
+            if(contraUno == contraDos){
+                contadorValidacion++;
+            }else{
+                texto = texto + "- Las contraseñas no coinciden \n";
+            }
+            
+        }else{
+            texto = texto + "- La contraseña no es correcta \n";
+        }
+
+
+        if(contadorValidacion == 8){
+            e.submit();
+        }else{
+            alert(texto);
+        }
       
-        alert(texto);
+        
 
    
 }
@@ -150,7 +169,6 @@ function validarNombre(x){
 function validarCorreo(x){
 
     emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-    //Se muestra un texto a modo de ejemplo, luego va a ser un icono
     if (emailRegex.test(x)) {
       return true;
     } else {
@@ -198,7 +216,7 @@ function validarFechaNacimiento(x){
         let anhoNacimientoo = Number(anhoNacimiento);
         let hoy = new Date();
         let esteAnho = hoy.getFullYear()
-        alert(esteAnho-3)
+        
         
         if(((esteAnho-3) > anhoNacimientoo) || (cadena="")){
             return false;
@@ -206,8 +224,33 @@ function validarFechaNacimiento(x){
             return true;
         }
 
+}
+
+function validarUsername(x){
+
+    let usernameRegex = /^(?!.*\.\.)(?!.*\.$)[^\W][\w.]{0,29}$/igm;
+    if (usernameRegex.test(x)) {
+        return true;
+    } else {
+        return false;
+    }
 
 }
+
+function validarContrasenha(x){
+    let contraRegex = /^(?=(?:.*\d))(?=.*[A-Z])(?=.*[a-z])(?=.*[.,*!?¿¡/#$%&])\S{8,64}$/;
+    if (contraRegex.test(x)) {
+        return true;
+    } else {
+        return false;
+    }
+    
+}
+
+
+
+
+
 
 
 

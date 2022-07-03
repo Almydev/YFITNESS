@@ -84,7 +84,7 @@
 
                 <div class="modal-body d-flex justify-content-around align-items-center" style="margin:40px; padding: 10px;">
                     <div id="form" class="" style="width: 50%; padding: 5%;">
-                        <form method="POST" action="">
+                        <form action="/php/registro.php" method="POST">
                             <div class="row mb-2">
                                 <div class="col">
                                     <input type="text" class="form-control" placeholder="Nombre" id="txtNombre" name="nombre">
