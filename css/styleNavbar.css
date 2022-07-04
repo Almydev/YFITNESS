@@ -300,9 +300,9 @@ body.dark .switch::before{
 }
 
 .sidebar.close ~ .home{
-    left: 78px;
+    left: 100px;
     height: 100vh;
-    width: calc(100% - 78px);
+    width: calc(100% - 100px);
 }
 body.dark .home .text{
     color: var(--text-color);

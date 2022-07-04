@@ -10,8 +10,9 @@
     
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    
-    <title>Dashboard Sidebar Menu</title> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <title>YFITNESS</title> 
 </head>
 <body>
     <nav class="sidebar close">
@@ -22,8 +23,8 @@
                 </span>
 
                 <div class="text logo-text">
-                    <span class="name">Codinglab</span>
-                    <span class="profession">Web developer</span>
+                    <span class="hola">HOLA!</span>
+                    <span class="name">Nombre Usuario</span>
                 </div>
             </div>
 
@@ -35,45 +36,51 @@
 
 
                 <ul class="menu-links">
-                    <li class="nav-link">
+                    <li class="nav-link" id="ejercicios">
                         <a href="#">
                             <i class='bx bx-home-alt icon' ></i>
-                            <span class="text nav-text">Dashboard</span>
+                            <span class="text nav-text">Ejercicios</span>
                         </a>
                     </li>
 
-                    <li class="nav-link">
+                    <li class="nav-link" id="rutina">
                         <a href="#">
                             <i class='bx bx-bar-chart-alt-2 icon' ></i>
-                            <span class="text nav-text">Revenue</span>
+                            <span class="text nav-text">Mi Rutina</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-bell icon'></i>
-                            <span class="text nav-text">Notifications</span>
+                            <span class="text nav-text">Calendario</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-pie-chart-alt icon' ></i>
-                            <span class="text nav-text">Analytics</span>
+                            <span class="text nav-text">Ajustes</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-heart icon' ></i>
-                            <span class="text nav-text">Likes</span>
+                            <span class="text nav-text">Soporte</span>
                         </a>
                     </li>
 
-                    <li class="nav-link">
+                    <li class="nav-link" style="display:none;">
                         <a href="#">
                             <i class='bx bx-wallet icon' ></i>
-                            <span class="text nav-text">Wallets</span>
+                            <span class="text nav-text">Añadir Ejercicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-link" style="display:none;">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Gestion de Usuarios</span>
                         </a>
                     </li>
 
@@ -105,11 +112,12 @@
 
     </nav>
 
-    <section class="home">
-        <div class="text">Dashboard Sidebar</div>
+    <section class="home" id="contenedor">
+        <div class="text" >EJERCICIOS</div>
     </section>
 
     <script src="/js/scriptNAvbar.js"></script>
+    <script src="/js/movimiento.js"></script>
 
 </body>
 </html>
