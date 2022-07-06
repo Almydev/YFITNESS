@@ -21,8 +21,10 @@ function e(){
 
 
     $("#bodybuilding").click(function(){
-        $("body").load("/php/listadoEjercicios.php");
+        $("body").load("/php/listadoEjercicios.html");
     })
+
+    
 
 }
     
