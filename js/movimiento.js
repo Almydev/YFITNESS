@@ -2,20 +2,20 @@ $(document).ready(e);
 
 function e(){
     $("#ejercicios").click(function(){
-        $("#contenedor").load("/html/ejercicios.html");
+        $("#contenedor").load("/HTML/ejercicios.html");
     });
 
     $("#rutina").click(function(){
-        $("#contenedor").load("/html/mirutina.html");
+        $("#contenedor").load("/HTML/mirutina.html");
     });
     $("#calendario").click(function(){
-        $("#contenedor").load("/html/calendario.html");
+        $("#contenedor").load("/HTML/calendario.html");
     });
     $("#ajustes").click(function(){
-        $("#contenedor").load("/html/ajustes.html");
+        $("#contenedor").load("/HTML/ajustes.html");
     });
     $("#soporte").click(function(){
-        $("#contenedor").load("/html/soporteyfitness.html");
+        $("#contenedor").load("/HTML/soporteyfitness.html");
     })
 
 
