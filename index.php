@@ -165,6 +165,51 @@
         </div>
 
     </div>
+
+    <div id="musculacion">
+        <div id="textoMusulación">
+            <h1>
+                Musculación
+            </h1>
+            <p>
+                    Tonifica tu cuerpo y hazlo crecer con
+                nuestros ejercicios a medida para cada zona muscular
+                                zona muscular.
+            </p>
+        </div>
+        <div id="imagenMusculación">
+            <img src="/images/musculacion/AD.png" alt="Andreu Diu">
+        </div>
+    </div>
+
+    <div id="abdomen">
+        <div id="imagenAbdomen">
+            <img src="/images/abdomen/DuoABS.png" alt="Pareja ABS">
+        </div>
+        <div id="textoAbdomen">
+            <h1>
+                Abdomen
+            </h1>
+            <p>
+                    Mejora toda la parte del core
+                nuestros ejercicios dedicados al torso.
+            </p>
+        </div>
+    </div>
+    <div id="cardio">
+        <div id="textoCardio">
+            <h1>
+                Abdomen
+            </h1>
+            <p>
+                    Mejora toda la parte del core
+                nuestros ejercicios dedicados al torso.
+            </p>
+        </div>
+        <div id="imagenCardio">
+            <img src="/images/abdomen/DuoABS.png" alt="Pareja ABS">
+        </div>
+    </div>
        
    
 
