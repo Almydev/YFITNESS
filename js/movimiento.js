@@ -18,13 +18,5 @@ function e(){
         $("#contenedor").load("/HTML/soporteyfitness.html");
     })
 
-
-
-    $("#bodybuilding").click(function(){
-        $("body").load("/php/listadoEjercicios.html");
-    })
-
-    
-
 }
     
